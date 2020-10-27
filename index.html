@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detector 3D</title>
+  <link rel="stylesheet" href="./css/darkly.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/index.js" charset="utf-8"></script>
+  <script src="./js/moment.js" charset="utf-8"></script>
+</head>
+<body>
+  <h1 class="heading has-text-centered">Detector 3D</h2>
+  <hr>
+  <div class="columns">
+    <div class="column">
+      <div class="task-details" >
+        <nav class="level is-mobile">
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">Guardar</p>
+              <div class="control">
+                <div class="select is-success">
+                  <select class="sort-method">
+                    <option>Guardar factor</option>
+                    <option>Guardar como...</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">Campo</p>
+              <div class="control">
+                <div class="select is-success">
+                  <select class="sort-method">
+                    <option>Ninguno</option>
+                    <option>3x3</option>
+                    <option>5x5</option>
+                    <option>8x8</option>
+                    <option>10x10</option>
+                    <option>12x12</option>
+                    <option>15x15</option>
+                    <option>20x20</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">Tiempo (seg)</p>
+              <div class="control">
+                <input class="input sample-volume has-text-centered" type="number" value="20">
+              </div>
+            </div>
+          </div>
+
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">T. Restante</p>
+              <p class="timer title is-4 has-text-link">
+                <span class="min">00</span> : 
+                <span class="sec">00</span>
+              </p>
+            </div>
+          </div>
+          
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">Acciones</p>
+              <div class="is-flex">
+                <div class="control is-fetching">
+                  <button class="button is-link is-outlined">Inicio</button>
+                </div>
+                <div class="control is-fetching">
+                  <button class="button is-link is-outlined">Fin</button>
+                </div>
+                <div class="control is-fetching">
+                  <button class="button is-link is-outlined">Mostrar</button>
+                </div>
+                <div class="control is-fetching">
+                  <button class="button is-link is-outlined">Reiniciar</button>
+                </div>
+              <div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column is-8">
+      <div class="plot-3d heading">3d</div>
+      <div class="plot-pdd heading">pdd</div>
+      <div class="plot-field heading">campo</div>
+    </div>
+    <div class="column is-4">
+      <p class="heading has-text-centered">Valores</p>
+      <div class="tables table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th> Nº </th>
+              <th> M1 </th>
+              <th> M2 </th>
+              <th> M3 </th>
+              <th> M4 </th>
+              <th> M5 </th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr>
+              <th> 1 </th>
+              <th> 0.21 </th>
+              <th> 0.21 </th>
+              <th> 0.21 </th>
+              <th> 0.21 </th>
+              <th> 0.21 </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="heading has-text-centered">Logs</p>
+  <div class="events ">
+  </div>
+</body>
+</html>
